@@ -12,7 +12,7 @@ img = imread('dino13_green.tif');
 fontSize = 16;
 imshow(img, []);
 axis on;
-title('Original Transillumination Image', 'FontSize', fontSize);
+title('Original Fluorescence Image', 'FontSize', fontSize);
 set(gcf, 'Position', get(0,'Screensize')); % Maximize figure.
 
 % Ask user to draw Square.
@@ -101,21 +101,21 @@ blackMaskedImage_R(~binaryImage) = 0;
 subplot(2, 3, 4);
 imshow(blackMaskedImage_R);
 axis on;
-title('Masked Transillumination Image', 'FontSize', fontSize);
+title('Masked Red Image', 'FontSize', fontSize);
 
 blackMaskedImage_G = G;
 blackMaskedImage_G(~binaryImage) = 0;
 subplot(2, 3, 5);
 imshow(blackMaskedImage_G);
 axis on;
-title('Masked Reflectance Image', 'FontSize', fontSize);
+title('Masked Green Image', 'FontSize', fontSize);
 
 blackMaskedImage_B = B;
 blackMaskedImage_B(~binaryImage) = 0;
 subplot(2, 3, 6);
 imshow(blackMaskedImage_B);
 axis on;
-title('Masked Dual Probe Image', 'FontSize', fontSize);
+title('Masked Blue Image', 'FontSize', fontSize);
 
 % Calculate the means
 meanGL_R = mean(blackMaskedImage_R(binaryImage));
