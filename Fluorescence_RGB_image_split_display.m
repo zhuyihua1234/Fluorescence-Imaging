@@ -1,4 +1,6 @@
-[R,G,B] = imsplit(dino51_red_off);
+RGB_img = imread('dino13_green.tif');
+
+[R,G,B] = imsplit(RGB_img);
 
 figure
 subplot(1,3,1)
