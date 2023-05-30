@@ -1,4 +1,4 @@
-% This program calculates the average intensity inside a 75x75 pixels box of a RGB image
+% This program calculates the average intensity inside a 400um box of a RGB image
 % Intensity Index of each of the R,G,B channels is displayed at the end
 % Instruction: Move current folder to the folder containing your RGB image
 % Change the image file name on line 7
