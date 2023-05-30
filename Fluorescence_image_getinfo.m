@@ -16,7 +16,7 @@ title('Original Fluorescence Image', 'FontSize', fontSize);
 set(gcf, 'Position', get(0,'Screensize')); % Maximize figure.
 
 % Ask user to draw Square.
-message = sprintf('Left click and hold to begin drawing.\nSimply lift the mouse button to finish');
+message = sprintf('Drag the box to the Lesion ROI.\nDo not change the size of the box');
 uiwait(msgbox(message));
 h = imrect(gca,[10 10 75 75]);
 position = wait(h);
